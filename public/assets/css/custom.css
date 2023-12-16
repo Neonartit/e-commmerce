@@ -188,3 +188,6 @@ footer {
 .owl-carousel .owl-nav button.owl-next {
   right: -20px;
 }
+.txt-about-us {
+  text-decoration: underline;
+}

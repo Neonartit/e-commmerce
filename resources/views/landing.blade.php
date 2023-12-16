@@ -139,18 +139,27 @@
     <!-- My Account Section -->
     <section id="account" class="section">
         <div class="container">
-            <h2 class="section-heading">My Account</h2>
+            <div class="text-center">
+                We’re a sustainability-conscious lifestyle and Art for the modern souls. We celebrate the craftsmanship
+                of our makers and want to provide long-lasting pieces with a style that lasts.
+                <div class="mt-3">
+                    <h5 class="txt-about-us">
+                        More about us
+                    </h4>
+                </div>
+            </div>
+
             <!-- Add your account content here -->
         </div>
     </section>
-
+{{-- 
     <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container">
-            <h2 class="section-heading">Contact</h2>
+           <img src="{{ url('assets/img/landingImage/home_appliances.jpeg') }}" alt="">
             <!-- Add your contact content here -->
         </div>
-    </section>
+    </section> --}}
 
 
 </body>
