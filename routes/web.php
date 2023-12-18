@@ -19,10 +19,10 @@ Route::get('/', function () {
     return view('landing');
 });
 
+
 Auth::routes();
 //Dashboard
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
 //Repository
 Route::get('/repository', [App\Http\Controllers\RepositoryController::class, 'index'])->name('repository');
 
