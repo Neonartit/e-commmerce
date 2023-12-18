@@ -152,16 +152,6 @@
             <!-- Add your account content here -->
         </div>
     </section>
-{{-- 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-           <img src="{{ url('assets/img/landingImage/home_appliances.jpeg') }}" alt="">
-            <!-- Add your contact content here -->
-        </div>
-    </section> --}}
-
-
 </body>
 
 <footer class="footer">
