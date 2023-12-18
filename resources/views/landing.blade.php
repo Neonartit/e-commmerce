@@ -661,7 +661,7 @@
             <div class="hm-footer-copyright text-center">
                 <div class="footer-social">
                     <p>
-                        Copyright 2023 &copy; <a href="https://www.themesine.com/">BestDecorstore</a> All Rights Reserved.
+                        Copyright 2024 &copy; <a href="https://www.themesine.com/">BestDecorstore</a> All Rights Reserved.
                     </p><!--/p-->
                 </div><!--/.text-center-->
             </div><!--/.container-->
