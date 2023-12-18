@@ -1,203 +1,683 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- home.blade.php -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Shopping Cart Landing Page</title>
-    <!-- Bootstrap CSS -->
-    <link href="{{ url('assets/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ url('assets/css/custom.css') }}" rel="stylesheet">
+@extends('layouts.layout_template')
 
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <style>
+@section('content')
+    <!--welcome-hero start -->
+    <header id="home" class="welcome-hero">
 
-    </style>
-</head>
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <!--/.carousel-indicator -->
+            <ol class="carousel-indicators">
+                <li data-target="#header-carousel" data-slide-to="0" class="active"><span class="small-circle"></span></li>
+                <li data-target="#header-carousel" data-slide-to="1"><span class="small-circle"></span></li>
+                <li data-target="#header-carousel" data-slide-to="2"><span class="small-circle"></span></li>
+            </ol><!-- /ol-->
+            <!--/.carousel-indicator -->
 
-<body>
+            <!--/.carousel-inner -->
+            <div class="carousel-inner" role="listbox">
+                <!-- .item -->
+                <div class="item active">
+                    <div class="single-slide-item slide1">
+                        <div class="container">
+                            <div class="welcome-hero-content">
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <div class="single-welcome-hero">
+                                            <div class="welcome-hero-txt">
+                                                <h4>great design collection</h4>
+                                                <h2>green tara gilt bronze tibetan statue</h2>
+                                                <p>
+                                                    A beautiful gilt bronze statue of Tibetan Green Tara. The Goddess is
+                                                    seated in lalitasana on an elaborately incised double-lotus base with
+                                                    the pendant foot resting on a smaller lotus, the right hand extended in
+                                                    varadamudra and the left held in vitarkamudra. She is clad in an
+                                                    embroidered dhoti that ties around her waist, leaving the upper torso
+                                                    bare showcasing lariats of necklace and jewel-encrusted bracelets.
+                                                </p>
+                                                <div class="packages-price">
+                                                    <p>
+                                                        $ 399.00
+                                                        <del>$ 499.00</del>
+                                                    </p>
+                                                </div>
+                                                <button class="btn-cart welcome-add-cart"
+                                                    onclick="window.location.href='#'">
+                                                    <span class="lnr lnr-plus-circle"></span>
+                                                    add <span>to</span> cart
+                                                </button>
+                                                <button class="btn-cart welcome-add-cart welcome-more-info"
+                                                    onclick="window.location.href='#'">
+                                                    more info
+                                                </button>
+                                            </div><!--/.welcome-hero-txt-->
+                                        </div><!--/.single-welcome-hero-->
+                                    </div><!--/.col-->
+                                    <div class="col-sm-5">
+                                        <div class="single-welcome-hero">
+                                            <div class="welcome-hero-img">
+                                                <img src="assets/images/slider/pic2.png" alt="slider image">
+                                            </div><!--/.welcome-hero-txt-->
+                                        </div><!--/.single-welcome-hero-->
+                                    </div><!--/.col-->
+                                </div><!--/.row-->
+                            </div><!--/.welcome-hero-content-->
+                        </div><!-- /.container-->
+                    </div><!-- /.single-slide-item-->
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a class="navbar-brand" href="#">Shopping Cart</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#shop">Shop</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#blog">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#account">My Account</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+                </div><!-- /.item .active-->
 
-    <!-- Home Section -->
-    <section id="home" class="jumbotron">
+                <div class="item">
+                    <div class="single-slide-item slide2">
+                        <div class="container">
+                            <div class="welcome-hero-content">
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <div class="single-welcome-hero">
+                                            <div class="welcome-hero-txt">
+                                                <h4>great design collection</h4>
+                                                <h2> Vintage Flower Vase </h2>
+                                                <p>
+                                                    Vintage Flower Vase, Chinese, Art Deco, Display, Urn, Mid 20th Century,
+                                                    C.1940
+                                                </p>
+                                                <div class="packages-price">
+                                                    <p>
+                                                        $ 1022.48
+                                                        <del>$ 1122.00</del>
+                                                    </p>
+                                                </div>
+                                                <button class="btn-cart welcome-add-cart"
+                                                    onclick="window.location.href='#'">
+                                                    <span class="lnr lnr-plus-circle"></span>
+                                                    add <span>to</span> cart
+                                                </button>
+                                                <button class="btn-cart welcome-add-cart welcome-more-info"
+                                                    onclick="window.location.href='#'">
+                                                    more info
+                                                </button>
+                                            </div><!--/.welcome-hero-txt-->
+                                        </div><!--/.single-welcome-hero-->
+                                    </div><!--/.col-->
+                                    <div class="col-sm-5">
+                                        <div class="single-welcome-hero">
+                                            <div class="welcome-hero-img">
+                                                <img src="assets/images/slider/pic1.png" alt="slider image">
+                                            </div><!--/.welcome-hero-txt-->
+                                        </div><!--/.single-welcome-hero-->
+                                    </div><!--/.col-->
+                                </div><!--/.row-->
+                            </div><!--/.welcome-hero-content-->
+                        </div><!-- /.container-->
+                    </div><!-- /.single-slide-item-->
+
+                </div><!-- /.item .active-->
+
+                <div class="item">
+                    <div class="single-slide-item slide3">
+                        <div class="container">
+                            <div class="welcome-hero-content">
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <div class="single-welcome-hero">
+                                            <div class="welcome-hero-txt">
+                                                <h4>great design collection</h4>
+                                                <h2>duck pair medium</h2>
+                                                <p>
+                                                    Made from Quality Metal and Handmade in India Gorgeous Hand work and
+                                                    perfect showpiece of Indian Handicrafts Beautiful Puja Idol For Home &
+                                                    Office. Showpieces Placed in Home Office Drawing / Living & Pooja Room
+                                                    brings Wealth,Health,Peace & Happiness.
+                                                </p>
+                                                <div class="packages-price">
+                                                    <p>
+                                                        $ 299.00
+                                                        <del>$ 399.00</del>
+                                                    </p>
+                                                </div>
+                                                <button class="btn-cart welcome-add-cart"
+                                                    onclick="window.location.href='#'">
+                                                    <span class="lnr lnr-plus-circle"></span>
+                                                    add <span>to</span> cart
+                                                </button>
+                                                <button class="btn-cart welcome-add-cart welcome-more-info"
+                                                    onclick="window.location.href='#'">
+                                                    more info
+                                                </button>
+                                            </div><!--/.welcome-hero-txt-->
+                                        </div><!--/.single-welcome-hero-->
+                                    </div><!--/.col-->
+                                    <div class="col-sm-5">
+                                        <div class="single-welcome-hero">
+                                            <div class="welcome-hero-img">
+                                                <img src="assets/images/slider/pic3.png" alt="slider image">
+                                            </div><!--/.welcome-hero-txt-->
+                                        </div><!--/.single-welcome-hero-->
+                                    </div><!--/.col-->
+                                </div><!--/.row-->
+                            </div><!--/.welcome-hero-content-->
+                        </div><!-- /.container-->
+                    </div><!-- /.single-slide-item-->
+
+                </div><!-- /.item .active-->
+            </div><!-- /.carousel-inner-->
+
+        </div><!--/#header-carousel-->
+
+        <!-- top-area Start -->
+        <div class="top-area">
+            <div class="header-area">
+                <!-- Start Navigation -->
+                <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy" data-minus-value-desktop="70"
+                    data-minus-value-mobile="55" data-speed="1000">
+
+                    <!-- Start Top Search -->
+                    <div class="top-search">
+                        <div class="container">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                                <input type="text" class="form-control" placeholder="Search">
+                                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Top Search -->
+
+                    <div class="container">
+                        <!-- Start Atribute Navigation -->
+                        <div class="attr-nav">
+                            <ul>
+                                <li class="search">
+                                    <a href="#"><span class="lnr lnr-magnifier"></span></a>
+                                </li><!--/.search-->
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <span class="lnr lnr-cart"></span>
+                                        <span class="badge badge-bg-1">2</span>
+                                    </a>
+                                    <ul class="dropdown-menu cart-list s-cate">
+                                        <li class="single-cart-list">
+                                            <a href="#" class="photo"><img
+                                                    src="assets/images/collection/arrivals1.png" class="cart-thumb"
+                                                    alt="image" /></a>
+                                            <div class="cart-list-txt">
+                                                <h6><a href="#">arm <br> chair</a></h6>
+                                                <p>1 x - <span class="price">$180.00</span></p>
+                                            </div><!--/.cart-list-txt-->
+                                            <div class="cart-close">
+                                                <span class="lnr lnr-cross"></span>
+                                            </div><!--/.cart-close-->
+                                        </li><!--/.single-cart-list -->
+                                        <li class="single-cart-list">
+                                            <a href="#" class="photo"><img
+                                                    src="assets/images/collection/arrivals2.png" class="cart-thumb"
+                                                    alt="image" /></a>
+                                            <div class="cart-list-txt">
+                                                <h6><a href="#">single <br> armchair</a></h6>
+                                                <p>1 x - <span class="price">$180.00</span></p>
+                                            </div><!--/.cart-list-txt-->
+                                            <div class="cart-close">
+                                                <span class="lnr lnr-cross"></span>
+                                            </div><!--/.cart-close-->
+                                        </li><!--/.single-cart-list -->
+                                        <li class="single-cart-list">
+                                            <a href="#" class="photo"><img
+                                                    src="assets/images/collection/arrivals3.png" class="cart-thumb"
+                                                    alt="image" /></a>
+                                            <div class="cart-list-txt">
+                                                <h6><a href="#">wooden arn <br> chair</a></h6>
+                                                <p>1 x - <span class="price">$180.00</span></p>
+                                            </div><!--/.cart-list-txt-->
+                                            <div class="cart-close">
+                                                <span class="lnr lnr-cross"></span>
+                                            </div><!--/.cart-close-->
+                                        </li><!--/.single-cart-list -->
+                                        <li class="total">
+                                            <span>Total: $0.00</span>
+                                            <button class="btn-cart pull-right" onclick="window.location.href='#'">view
+                                                cart</button>
+                                        </li>
+                                    </ul>
+                                </li><!--/.dropdown-->
+                            </ul>
+                        </div><!--/.attr-nav-->
+                        <!-- End Atribute Navigation -->
+
+                        <!-- Start Header Navigation -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#navbar-menu">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <a class="navbar-brand" href="index.html">best<span>decorstore</span>.</a>
+
+                        </div><!--/.navbar-header-->
+                        <!-- End Header Navigation -->
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+                            <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
+                                <li class=" scroll active"><a href="#home">home</a></li>
+                                <li class="scroll"><a href="#new-arrivals">product</a></li>
+                                <li class="scroll"><a href="#newsletter">contact</a></li>
+                            </ul><!--/.nav -->
+                        </div><!-- /.navbar-collapse -->
+                    </div><!--/.container-->
+                </nav><!--/nav-->
+                <!-- End Navigation -->
+            </div><!--/.header-area-->
+            <div class="clearfix"></div>
+
+        </div><!-- /.top-area-->
+        <!-- top-area End -->
+
+    </header><!--/.welcome-hero-->
+    <!--welcome-hero end -->
+
+    <!--populer-products start -->
+    <section id="populer-products" class="populer-products">
         <div class="container">
-            <h1 class="display-4">Welcome to our Shopping Cart</h1>
-            <p class="lead">Discover the latest and greatest products right here!</p>
-            <a class="btn btn-primary btn-lg" href="#shop" role="button">Shop Now</a>
-        </div>
-    </section>
-
-    <!-- Shop Section -->
-    <section id="shop" class="section">
-        <div class="">
-            <div class="shop-warp-section">
+            <div class="populer-products-content">
                 <div class="row">
-                    <div class="col-md-6">
-                        <img class="img-show-right-section" src="{{ url('assets/img/landingImage/home_detail.jpg') }}"
-                            alt="">
+                    <div class="col-md-3">
+                        <div class="single-populer-products">
+                            <div class="single-populer-product-img mt40">
+                                <img src="assets/images/populer-products/a1.png" alt="populer-products images">
+                            </div>
+                            <h2><a href="#">wrought and cast iron</a></h2>
+                            <div class="single-populer-products-para">
+                                <p>Wrought And Cast Iron Ganesha Tealight Candle holder Multi-colour for Home Decor.</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="text-center display-home-right">
-                            <div>
-                                <h3>Our collection for your home</h3>
-                                <span>Best art for nice place</span>
-                                <div class="mt-3">
-                                    <button class="btn btn-primary-theme">
-                                        shop now
-                                    </button>
+                        <div class="single-populer-products">
+                            <div class="single-inner-populer-products">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="single-inner-populer-product-img">
+                                            <img src="assets/images/populer-products/a2.png"
+                                                alt="populer-products images">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-12">
+                                        <div class="single-inner-populer-product-txt">
+                                            <h2>
+                                                <a href="#">
+                                                    Cube Style Glass Vase
+                                                </a>
+                                            </h2>
+                                            <p>
+                                                Edi ut perspiciatis unde omnis iste natusina error sit voluptatem
+                                                accusantium doloret mque laudantium, totam rem aperiam.
+                                            </p>
+                                            <div class="populer-products-price">
+                                                <h4>Sales Start from <span>$99.00</span></h4>
+                                            </div>
+                                            <button class="btn-cart welcome-add-cart populer-products-btn"
+                                                onclick="window.location.href='#'">
+                                                discover more
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
-
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="single-populer-products">
+                            <div class="single-populer-products">
+                                <div class="single-populer-product-img">
+                                    <img src="assets/images/populer-products/a3.png" alt="populer-products images">
+                                </div>
+                                <h2><a href="#">Nutts</a></h2>
+                                <div class="single-populer-products-para">
+                                    <p>Nemo enim ipsam voluptatem quia volu ptas sit asperna aut odit aut fugit.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </div><!--/.container-->
 
-    <!-- Blog Section -->
-    <section id="blog" class="section">
+    </section><!--/.populer-products-->
+    <!--populer-products end-->
+
+    <!--new-arrivals start -->
+    <section id="new-arrivals" class="new-arrivals">
         <div class="container">
-            <h2 class="section-heading">Our latest products A special gift for everyone special.</h2>
-            <div class="owl-carousel">
-                <!-- Product Card 1 -->
-                <div class="product-card">
-                    <img src="{{ url('assets/img/landingImage/product1.png') }}" alt="Product 1">
-                    <h3>Product 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button class="btn btn-primary">Add to Cart</button>
+            <div class="section-header">
+                <h2>product</h2>
+            </div><!--/.section-header-->
+            <div class="new-arrivals-content">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-new-arrival">
+                            <div class="single-new-arrival-bg">
+                                <img src="assets/images/collection/p1.png" alt="new-arrivals images">
+                                <div class="single-new-arrival-bg-overlay"></div>
+                                <div class="sale bg-1">
+                                    <p>sale</p>
+                                </div>
+                                <div class="new-arrival-cart">
+                                    <p>
+                                        <span class="lnr lnr-cart"></span>
+                                        <a href="#">add <span>to </span> cart</a>
+                                    </p>
+                                    <p class="arrival-review pull-right">
+                                        <span class="lnr lnr-heart"></span>
+                                        <span class="lnr lnr-frame-expand"></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <h4><a href="#">wooden chair</a></h4>
+                            <p class="arrival-product-price">$65.00</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-new-arrival">
+                            <div class="single-new-arrival-bg">
+                                <img src="assets/images/collection/p2.png" alt="new-arrivals images">
+                                <div class="single-new-arrival-bg-overlay"></div>
+                                <div class="sale bg-2">
+                                    <p>sale</p>
+                                </div>
+                                <div class="new-arrival-cart">
+                                    <p>
+                                        <span class="lnr lnr-cart"></span>
+                                        <a href="#">add <span>to </span> cart</a>
+                                    </p>
+                                    <p class="arrival-review pull-right">
+                                        <span class="lnr lnr-heart"></span>
+                                        <span class="lnr lnr-frame-expand"></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <h4><a href="#">single armchair</a></h4>
+                            <p class="arrival-product-price">$80.00</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-new-arrival">
+                            <div class="single-new-arrival-bg">
+                                <img src="assets/images/collection/p3.png" alt="new-arrivals images">
+                                <div class="single-new-arrival-bg-overlay"></div>
+                                <div class="new-arrival-cart">
+                                    <p>
+                                        <span class="lnr lnr-cart"></span>
+                                        <a href="#">add <span>to </span> cart</a>
+                                    </p>
+                                    <p class="arrival-review pull-right">
+                                        <span class="lnr lnr-heart"></span>
+                                        <span class="lnr lnr-frame-expand"></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <h4><a href="#">wooden armchair</a></h4>
+                            <p class="arrival-product-price">$40.00</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-new-arrival">
+                            <div class="single-new-arrival-bg">
+                                <img src="assets/images/collection/p4.png" alt="new-arrivals images">
+                                <div class="single-new-arrival-bg-overlay"></div>
+                                <div class="sale bg-1">
+                                    <p>sale</p>
+                                </div>
+                                <div class="new-arrival-cart">
+                                    <p>
+                                        <span class="lnr lnr-cart"></span>
+                                        <a href="#">add <span>to </span> cart</a>
+                                    </p>
+                                    <p class="arrival-review pull-right">
+                                        <span class="lnr lnr-heart"></span>
+                                        <span class="lnr lnr-frame-expand"></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <h4><a href="#">stylish chair</a></h4>
+                            <p class="arrival-product-price">$100.00</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-new-arrival">
+                            <div class="single-new-arrival-bg">
+                                <img src="assets/images/collection/p5.png" alt="new-arrivals images">
+                                <div class="single-new-arrival-bg-overlay"></div>
+                                <div class="new-arrival-cart">
+                                    <p>
+                                        <span class="lnr lnr-cart"></span>
+                                        <a href="#">add <span>to </span> cart</a>
+                                    </p>
+                                    <p class="arrival-review pull-right">
+                                        <span class="lnr lnr-heart"></span>
+                                        <span class="lnr lnr-frame-expand"></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <h4><a href="#">modern chair</a></h4>
+                            <p class="arrival-product-price">$120.00</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-new-arrival">
+                            <div class="single-new-arrival-bg">
+                                <img src="assets/images/collection/p6.png" alt="new-arrivals images">
+                                <div class="single-new-arrival-bg-overlay"></div>
+                                <div class="sale bg-1">
+                                    <p>sale</p>
+                                </div>
+                                <div class="new-arrival-cart">
+                                    <p>
+                                        <span class="lnr lnr-cart"></span>
+                                        <a href="#">add <span>to </span> cart</a>
+                                    </p>
+                                    <p class="arrival-review pull-right">
+                                        <span class="lnr lnr-heart"></span>
+                                        <span class="lnr lnr-frame-expand"></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <h4><a href="#">mapple wood dinning table</a></h4>
+                            <p class="arrival-product-price">$140.00</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-new-arrival">
+                            <div class="single-new-arrival-bg">
+                                <img src="assets/images/collection/p7.png" alt="new-arrivals images">
+                                <div class="single-new-arrival-bg-overlay"></div>
+                                <div class="sale bg-2">
+                                    <p>sale</p>
+                                </div>
+                                <div class="new-arrival-cart">
+                                    <p>
+                                        <span class="lnr lnr-cart"></span>
+                                        <a href="#">add <span>to </span> cart</a>
+                                    </p>
+                                    <p class="arrival-review pull-right">
+                                        <span class="lnr lnr-heart"></span>
+                                        <span class="lnr lnr-frame-expand"></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <h4><a href="#">arm chair</a></h4>
+                            <p class="arrival-product-price">$90.00</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-new-arrival">
+                            <div class="single-new-arrival-bg">
+                                <img src="assets/images/collection/p8.png" alt="new-arrivals images">
+                                <div class="single-new-arrival-bg-overlay"></div>
+                                <div class="new-arrival-cart">
+                                    <p>
+                                        <span class="lnr lnr-cart"></span>
+                                        <a href="#">add <span>to </span> cart</a>
+                                    </p>
+                                    <p class="arrival-review pull-right">
+                                        <span class="lnr lnr-heart"></span>
+                                        <span class="lnr lnr-frame-expand"></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <h4><a href="#">wooden bed</a></h4>
+                            <p class="arrival-product-price">$140.00</p>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- Product Card 2 -->
-                <div class="product-card">
-                    <img src="{{ url('assets/img/landingImage/product2.jpg') }}" alt="Product 2">
-                    <h3>Product 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button class="btn btn-primary">Add to Cart</button>
-                </div>
-
-                <div class="product-card">
-                    <img src="{{ url('assets/img/landingImage/product3.jpg') }}" alt="Product 2">
-                    <h3>Product 3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button class="btn btn-primary">Add to Cart</button>
-                </div>
-                <div class="product-card">
-                    <img src="{{ url('assets/img/landingImage/product3.jpg') }}" alt="Product 2">
-                    <h3>Product 5</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button class="btn btn-primary">Add to Cart</button>
-                </div>
-                <div class="product-card">
-                    <img src="{{ url('assets/img/landingImage/product3.jpg') }}" alt="Product 2">
-                    <h3>Product 6</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button class="btn btn-primary">Add to Cart</button>
-                </div>
-                <div class="product-card">
-                    <img src="{{ url('assets/img/landingImage/product3.jpg') }}" alt="Product 2">
-                    <h3>Product 7</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button class="btn btn-primary">Add to Cart</button>
-                </div>
-
-                <!-- Add more product cards as needed... -->
             </div>
-        </div>
-    </section>
+        </div><!--/.container-->
 
-    <!-- My Account Section -->
-    <section id="account" class="section">
+    </section><!--/.new-arrivals-->
+    <!--new-arrivals end -->
+
+    <!--sofa-collection start -->
+    <section id="sofa-collection">
+        <div class="owl-carousel owl-theme" id="collection-carousel">
+            <div class="sofa-collection collectionbg1">
+                <div class="container">
+                    <div class="sofa-collection-txt">
+                        <h2>unlimited sofa collection</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <div class="sofa-collection-price">
+                            <h4>strting from <span>$ 199</span></h4>
+                        </div>
+                        <button class="btn-cart welcome-add-cart sofa-collection-btn" onclick="window.location.href='#'">
+                            view more
+                        </button>
+                    </div>
+                </div>
+            </div><!--/.sofa-collection-->
+            <div class="sofa-collection collectionbg2">
+                <div class="container">
+                    <div class="sofa-collection-txt">
+                        <h2>unlimited dainning table collection</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <div class="sofa-collection-price">
+                            <h4>strting from <span>$ 299</span></h4>
+                        </div>
+                        <button class="btn-cart welcome-add-cart sofa-collection-btn" onclick="window.location.href='#'">
+                            view more
+                        </button>
+                    </div>
+                </div>
+            </div><!--/.sofa-collection-->
+        </div><!--/.collection-carousel-->
+
+    </section><!--/.sofa-collection-->
+    <!--sofa-collection end -->
+
+    <!--newsletter strat -->
+    <section id="newsletter" class="newsletter">
         <div class="container">
-            <div class="text-center">
-                We’re a sustainability-conscious lifestyle and Art for the modern souls. We celebrate the craftsmanship
-                of our makers and want to provide long-lasting pieces with a style that lasts.
-                <div class="mt-3">
-                    <h5 class="txt-about-us">
-                        More about us
-                    </h4>
+            <div class="hm-footer-details">
+                <div class="row">
+                    <div class=" col-md-3 col-sm-6 col-xs-12">
+                        <div class="hm-footer-widget">
+                            <div class="hm-foot-title">
+                                <h4>information</h4>
+                            </div><!--/.hm-foot-title-->
+                            <div class="hm-foot-menu">
+                                <ul>
+                                    <li><a href="#">about us</a></li><!--/li-->
+                                    <li><a href="#">contact us</a></li><!--/li-->
+                                </ul><!--/ul-->
+                            </div><!--/.hm-foot-menu-->
+                        </div><!--/.hm-footer-widget-->
+                    </div><!--/.col-->
+                    <div class=" col-md-3 col-sm-6 col-xs-12">
+                        <div class="hm-footer-widget">
+                            <div class="hm-foot-title">
+                                <h4>collections</h4>
+                            </div><!--/.hm-foot-title-->
+                            <div class="hm-foot-menu">
+                                <ul>
+                                    <li><a href="#">wooden chair</a></li><!--/li-->
+                                    <li><a href="#">royal cloth sofa</a></li><!--/li-->
+                                    <li><a href="#">accent chair</a></li><!--/li-->
+                                    <li><a href="#">bed</a></li><!--/li-->
+                                    <li><a href="#">hanging lamp</a></li><!--/li-->
+                                </ul><!--/ul-->
+                            </div><!--/.hm-foot-menu-->
+                        </div><!--/.hm-footer-widget-->
+                    </div><!--/.col-->
+                    <div class=" col-md-3 col-sm-6 col-xs-12">
+                        <div class="hm-footer-widget">
+                            <div class="hm-foot-title">
+                                <h4>my accounts</h4>
+                            </div><!--/.hm-foot-title-->
+                            <div class="hm-foot-menu">
+                                <ul>
+                                    <li><a href="#">my account</a></li><!--/li-->
+
+                                    <li><a href="#">my cart</a></li><!--/li-->
+                                </ul><!--/ul-->
+                            </div><!--/.hm-foot-menu-->
+                        </div><!--/.hm-footer-widget-->
+                    </div><!--/.col-->
+                    <div class=" col-md-3 col-sm-6  col-xs-12">
+                        <div class="hm-footer-widget">
+                            <div class="hm-foot-title">
+                                <h4>newsletter</h4>
+                            </div><!--/.hm-foot-title-->
+                            <div class="hm-foot-para">
+                                <p>
+                                    Subscribe to get latest news,update and information.
+                                </p>
+                            </div><!--/.hm-foot-para-->
+                            <div class="hm-foot-email">
+                                <div class="foot-email-box">
+                                    <input type="text" class="form-control" placeholder="Enter Email Here....">
+                                </div><!--/.foot-email-box-->
+                                <div class="foot-email-subscribe">
+                                    <span><i class="fa fa-location-arrow"></i></span>
+                                </div><!--/.foot-email-icon-->
+                            </div><!--/.hm-foot-email-->
+                        </div><!--/.hm-footer-widget-->
+                    </div><!--/.col-->
+                </div><!--/.row-->
+            </div><!--/.hm-footer-details-->
+
+        </div><!--/.container-->
+
+    </section><!--/newsletter-->
+    <!--newsletter end -->
+
+    <!--footer start-->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="hm-footer-copyright text-center">
+                <div class="footer-social">
+                    <p>
+                        Copyright 2023 &copy; <a href="https://www.themesine.com/">BestDecorstore</a> All Rights Reserved.
+                    </p><!--/p-->
+                </div><!--/.text-center-->
+            </div><!--/.container-->
+
+            <div id="scroll-Top">
+                <div class="return-to-top">
+                    <i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top"
+                        title="" data-original-title="Back to Top" aria-hidden="true"></i>
                 </div>
-            </div>
 
-            <!-- Add your account content here -->
-        </div>
-    </section>
-</body>
+            </div><!--/.scroll-Top-->
 
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h5>Contact Us</h5>
-                <p>Email: info@example.com</p>
-                <p>Phone: +1 (123) 456-7890</p>
-            </div>
-            <div class="col-md-6">
-                <h5>About Us</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.</p>
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer><!--/.footer-->
+    <!--footer end-->
+@endsection
 
-<!-- Bootstrap JS and dependencies -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+@section('scripts')
 
-<script>
-    // Initialize Owl Carousel
-    $(document).ready(function() {
-        $('.owl-carousel').owlCarousel({
-            items: 3, // Number of items to show in the slider
-            loop: true,
-            margin: 10,
-            nav: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 2
-                },
-                1000: {
-                    items: 3
-                }
-            }
-        });
-    });
-</script>
-
-</html>
+@endsection
