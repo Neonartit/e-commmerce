@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use app\Http\Controllers\UserAccessController;
+use app\Http\Controllers\ProductsController;
+use app\Http\Controllers\CategoriesController;
+use app\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Auth;
 
 /*
@@ -21,16 +23,17 @@ Route::get('/', function () {
 
 
 Auth::routes();
-//Dashboard
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-//Repository
-Route::get('/repository', [App\Http\Controllers\RepositoryController::class, 'index'])->name('repository');
+// backend products
+Route::get('/backend/products', [App\Http\Controllers\ProductsController::class, 'index']);
+Route::get('/backend/products/add', [App\Http\Controllers\ProductsController::class, 'add']);
+Route::get('/backend/products/edit', [App\Http\Controllers\ProductsController::class, 'edit']);
+Route::get('/backend/products/update', [App\Http\Controllers\ProductsController::class, 'update']);
 
-//Todo list
-Route::get('/todo-list', [App\Http\Controllers\TodolistController::class, 'index'])->name('todo-list');
+// backend categories
+Route::get('/backend/categories', [App\Http\Controllers\CategoriesController::class, 'index']);
+Route::get('/backend/categories/add', [App\Http\Controllers\CategoriesController::class, 'add']);
+Route::get('/backend/categories/edit', [App\Http\Controllers\CategoriesController::class, 'edit']);
+Route::get('/backend/categories/update', [App\Http\Controllers\CategoriesController::class, 'update']);
 
-//reports
-Route::get('/reports', [App\Http\Controllers\ReportsController::class, 'index'])->name('reports');
-
-//Users access
-Route::get('/users-access', [App\Http\Controllers\UserAccessController::class, 'index'])->name('users-access');
+// backend users
+Route::get('/backend/users', [App\Http\Controllers\UsersController::class, 'index']);
