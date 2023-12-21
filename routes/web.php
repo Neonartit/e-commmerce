@@ -23,17 +23,20 @@ Route::get('/', function () {
 
 
 Auth::routes();
+
 // backend products
-Route::get('/backend/products', [App\Http\Controllers\ProductsController::class, 'index']);
+Route::get('/backend/products', [App\Http\Controllers\ProductsController::class, 'index'])->name('backend-products');
 Route::get('/backend/products/add', [App\Http\Controllers\ProductsController::class, 'add']);
-Route::get('/backend/products/edit', [App\Http\Controllers\ProductsController::class, 'edit']);
-Route::get('/backend/products/update', [App\Http\Controllers\ProductsController::class, 'update']);
+Route::post('/backend/products/insert', [App\Http\Controllers\ProductsController::class, 'insert']);
+Route::get('/backend/products/edit/{id}', [App\Http\Controllers\ProductsController::class, 'edit']);
+Route::post('/backend/products/update', [App\Http\Controllers\ProductsController::class, 'update']);
 
 // backend categories
-Route::get('/backend/categories', [App\Http\Controllers\CategoriesController::class, 'index']);
+Route::get('/backend/categories', [App\Http\Controllers\CategoriesController::class, 'index'])->name('backend-categories');;
 Route::get('/backend/categories/add', [App\Http\Controllers\CategoriesController::class, 'add']);
-Route::get('/backend/categories/edit', [App\Http\Controllers\CategoriesController::class, 'edit']);
-Route::get('/backend/categories/update', [App\Http\Controllers\CategoriesController::class, 'update']);
+Route::post('/backend/categories/insert', [App\Http\Controllers\CategoriesController::class, 'insert']);
+Route::get('/backend/categories/edit/{id}', [App\Http\Controllers\CategoriesController::class, 'edit']);
+Route::post('/backend/categories/update', [App\Http\Controllers\CategoriesController::class, 'update']);
 
 // backend users
 Route::get('/backend/users', [App\Http\Controllers\UsersController::class, 'index']);
